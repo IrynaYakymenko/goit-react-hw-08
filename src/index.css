@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,39 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.formWrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100hv;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  box-shadow: 0 0 4px 4px lightgray;
+
+  & > label {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    & input {
+      padding: 5px;
+      border-radius: 4px;
+    }
+  }
+  & > button {
+    padding: 10px 15px;
+    background-color: rgb(193, 238, 238);
+  }
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
 }

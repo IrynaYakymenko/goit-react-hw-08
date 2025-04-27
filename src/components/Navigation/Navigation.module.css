@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(107, 12, 64);
+}
+
+.link:hover,
+.link:focus {
+  color: rgb(235, 138, 188);
+}
+
+.active {
+  color: rgb(235, 51, 146);
+  text-decoration: none;
+}
